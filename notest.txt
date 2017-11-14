@@ -1,0 +1,14 @@
+Praw can be used for scraping comments from reddit
+
+This will get a list of all comments hitting reddit
+>>> import praw
+>>> r = praw.Reddit('Comment parser example by u/_Daimon_')
+>>> all_comments = r.get_comments('all')
+
+
+The strategy: Constantly query all comments to get 
+1) the users username
+2) the sub reddit
+3) vote count
+
+We can track everywhere a single user posts over time to generate a network graph of user interactivity. Perhaps this ought to be constrained by whether those posts were upvoted or not - some way to determine whether it’s the user trolling (e.g. SRD or the SJW trolling people).
